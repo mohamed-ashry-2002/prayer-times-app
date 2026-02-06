@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background: #e8f3ff;
+}
+
+.date {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding: 15px;
+    background: #f2f7ff;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+.date span {
+    background: #ffffff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #003d99;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+@media(max-width: 767px) {
+    .date span {
+        padding: 8px;
+        font-size: 18px;
+        font-weight: 400;
+    }
+}
+
+.aladhan {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.aladhan li {
+    background: #ffffff;
+    color: #004b8d;
+    box-shadow: 0 4px 10px #c0d8ff;
+    font-size: 20px;
+    width: 30%;
+    height: 50px;
+    padding: 0 20px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+    border-right: 15px solid #0091ff;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+@media (max-width: 767px) {
+    .aladhan {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .aladhan li {
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+.aladhan li p {
+    padding: 0;
+    font-size: 25px;
+    margin-left: 10px;
+}
+#select {
+    text-align: center;
+}
+.chose {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.chose select {
+    font-family: sans-serif;
+    width: 250px;
+    font-size: 18px;
+    padding: 10px;
+    cursor: pointer;
+    outline: none;
+    border: 2px solid #4a2cc3;
+    background-color: #f8f8ff;
+    color: #333;
+    transition: 0.3s;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+#select:hover {
+    border-color: #6b4bff;
+    background-color: #eeeaff;
+}
+@media(max-width:767px) {
+    .chose select {
+        width: 100px;
+        font-size: 16px;
+        padding: 5px;
+        margin: 0 auto;
+    }
+}
+.chose select:focus {
+    border-color: #2d1ca3;
+    box-shadow: 0 0 5px #a38dff;
+}
